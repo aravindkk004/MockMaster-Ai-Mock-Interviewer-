@@ -167,9 +167,8 @@ export default function Home() {
                 Write promot for your form
               </h2>
               <p className="mt-1 text-sm text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
-                quo possimus adipisci distinctio alias voluptatum blanditiis
-                laudantium.
+                Design a customized mock interview form to simulate real-world
+                interview scenarios tailored to your preferences and industry.
               </p>
             </Link>
             <Link
@@ -181,9 +180,8 @@ export default function Home() {
                 Edit Your form{" "}
               </h2>
               <p className="mt-1 text-sm text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
-                quo possimus adipisci distinctio alias voluptatum blanditiis
-                laudantium.
+                Update and modify your interview form to fine-tune questions and
+                formats based on your evolving preparation needs.
               </p>
             </Link>
             <Link
@@ -195,9 +193,8 @@ export default function Home() {
                 Share & Start Accepting Responses
               </h2>
               <p className="mt-1 text-sm text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
-                quo possimus adipisci distinctio alias voluptatum blanditiis
-                laudantium.
+                Share your form with peers or mentors to get feedback, and start
+                receiving mock interview responses to enhance your preparation.
               </p>
             </Link>
           </div>
