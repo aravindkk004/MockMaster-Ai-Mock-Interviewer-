@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MockMaster: AI-Powered Mock Interview Platform
 
-## Getting Started
+MockMaster is an innovative web application that helps users practice mock interviews tailored to their specific roles and skills. It leverages AI to evaluate video responses, provide feedback, and give performance ratings based on user input. This platform aims to simulate real-world interview scenarios to enhance interview preparedness.
 
-First, run the development server:
+## Features
+
+- **Role and Skill Selection**: Choose your desired role and the specific skills you want to be assessed on.
+- **AI-Powered Interview**: The AI generates relevant interview questions based on the chosen role and skill.
+- **Video Recording**: Record your responses directly within the platform.
+- **AI Evaluation**: The AI evaluates your video responses and provides feedback based on criteria such as clarity, content relevance, and communication skills.
+- **Feedback and Rating**: Receive detailed feedback and a performance rating to help you improve.
+- **Real-time Performance Tracking**: View progress and track improvements over time.
+- **Secure Authentication**: User authentication powered by Clerk, ensuring secure login and registration.
+- **MongoDB Integration**: MongoDB stores user data, interview responses, feedback, and performance ratings for efficient retrieval.
+
+## Technologies Used
+
+- **Frontend**: Next.js, Tailwind CSS
+- **Backend**: Node.js, MongoDB
+- **Authentication**: Clerk
+- **AI Model**: Custom AI for interview question generation and response evaluation (using relevant NLP and ML models)
+- **Database**: MongoDB (for storing user data, responses, feedback, and performance)
+
+## Installation
+
+Follow the steps below to run the project locally:
+
+### Prerequisites
+
+Make sure you have **Node.js** and **MongoDB** installed on your local machine.
+
+### 1. Clone the Repository
+
+Clone the repository to your local machine:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/Ai-mock-interviewer.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Navigate to the project folder and install the required dependencies for the frontend and backend:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+npm install
+```
 
-## Learn More
+### 3. Set Up MongoDB
 
-To learn more about Next.js, take a look at the following resources:
+Ensure MongoDB is running locally or use a cloud MongoDB service (e.g., MongoDB Atlas). Update the .env file with your MongoDB URI.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+MONGODB_URI=your_mongodb_connection_string
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 4. Set Up Clerk Authentication
 
-## Deploy on Vercel
+Sign up on Clerk and create a new project.
+Add your Clerk API keys to the .env file.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+CLERK_FRONTEND_API=your_clerk_frontend_api
+CLERK_API_KEY=your_clerk_api_key
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 5. Run the Development Server
+
+Now, start the development server:
+
+`npm run dev`
+
+Open your browser and visit http://localhost:3000 to access the MockMaster platform.
+
+In the above section:
+
+- **Step 1** guides the user to clone the repository.
+- **Step 2** shows how to install dependencies using `npm`.
+- **Step 3** explains how to set up MongoDB and configure the connection string.
+- **Step 4** provides instructions on integrating Clerk authentication into the project.
+- **Step 5** outlines how to run the development server locally.
+
+Let me know if you need further clarification or more modifications!
