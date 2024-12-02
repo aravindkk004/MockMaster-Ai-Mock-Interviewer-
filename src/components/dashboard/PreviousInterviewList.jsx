@@ -48,7 +48,7 @@ const PreviousInterviewList = () => {
               />
             ))
           : [1, 2, 3, 4].map((item, index) => (
-              <div className="h-[100px] w-full bg-gray-200 animate-pulse rounded-lg "></div>
+              <div className="h-[100px] w-full bg-gray-200 animate-pulse rounded-lg " key={index}></div>
             ))}
       </div>
     </div>
