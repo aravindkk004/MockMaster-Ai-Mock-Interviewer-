@@ -18,7 +18,6 @@ MockMaster is an innovative web application that helps users practice mock inter
 - **Frontend**: Next.js, Tailwind CSS
 - **Backend**: Node.js, MongoDB
 - **Authentication**: Clerk
-- **AI Model**: Custom AI for interview question generation and response evaluation (using relevant NLP and ML models)
 - **Database**: MongoDB (for storing user data, responses, feedback, and performance)
 
 ## Installation
